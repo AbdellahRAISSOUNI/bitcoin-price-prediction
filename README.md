@@ -1,7 +1,23 @@
 
 # Bitcoin Price Predctions Web App
 
-A brief description of your project goes here. This should be a concise summary of what the project does and its purpose.
+Key Features
+
+Historical Data Fetching: The application fetches historical Bitcoin price data from the CryptoCompare API. This data is used to train the machine learning model.
+
+Price Prediction: The trained model is used to predict future Bitcoin prices. Users can input the number of days ahead for which they want to predict the price, and the application will display the predicted price.
+
+Current Price Display: The application also provides the current price of Bitcoin in USD, fetched from the CoinGecko API.
+
+Data Caching: To reduce the number of API calls and improve performance, the application caches the historical data for a day. If the data is already cached and is less than a day old, the application will use the cached data instead of making a new API call.
+
+User-Friendly Interface: The application has a simple, intuitive user interface where users can input the number of days for which they want to predict the price and view the predicted price.
+
+Error Handling: The application includes basic error handling to manage situations where the API calls fail or the data is not available.
+
+Purpose
+
+The purpose of this application is to provide users with a tool to predict the future price of Bitcoin based on historical data. It is intended for educational purposes and should not be used for actual trading or investment decisions
 
 # Table of Contents
 
@@ -46,24 +62,13 @@ python app.py
 
 # Deployment
 
-Instructions on how to deploy your project. This could include any specific steps for deploying to a hosting service, setting up a database, or any other deployment-related information.
+Still working on; and trying to make a server to host my flask application
 
 # Contributing
 
-Guidelines for contributing to your project. This could include how to report issues, how to propose new features, and how to submit pull requests.
+Feel free to do anything.
 
-# License
-
-Information about the license under which your project is distributed. If you're using an open-source license, be sure to include a link to the full text of the license.
-
-# Contact
+# Demo video on LinkedIn
 
 Your contact information, such as your email address, or links to your social media profiles or website.
 
-# Acknowledgments
-
-If you'd like to acknowledge any contributors or third-party libraries used in your project, you can do so here.
-
-```
-
-Remember to replace the placeholders (like `your-username`, `your-repo`, etc.) with the actual details of your project. This template provides a good starting point, but you can add more sections or details as needed for your project.
