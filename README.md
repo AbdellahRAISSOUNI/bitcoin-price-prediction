@@ -1,6 +1,8 @@
 
 # Bitcoin Price Predctions Web App
 
+
+
 # Key Features
 
 1 -Historical Data Fetching: The application fetches historical Bitcoin price data from the CryptoCompare API. This data is used to train the machine learning model.
