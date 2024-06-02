@@ -74,5 +74,4 @@ Feel free to do anything.
 
 # Demo video on LinkedIn
 
-Your contact information, such as your email address, or links to your social media profiles or website.
-
+https://www.linkedin.com/posts/abdellah-raissouni-1419432a8_introducing-my-bitcoin-price-prediction-tool-activity-7203153939645513728-HdIU?utm_source=share&utm_medium=member_desktop
