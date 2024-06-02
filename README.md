@@ -3,7 +3,7 @@
 
 Key Features
 
-Historical Data Fetching: The application fetches historical Bitcoin price data from the CryptoCompare API. This data is used to train the machine learning model.
+ ## Historical Data Fetching: ## The application fetches historical Bitcoin price data from the CryptoCompare API. This data is used to train the machine learning model.
 
 Price Prediction: The trained model is used to predict future Bitcoin prices. Users can input the number of days ahead for which they want to predict the price, and the application will display the predicted price.
 
