@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <div id="current-price">
+            <h2>Current Bitcoin Price: <span id="price"></span></h2>
+        </div>
+
+        <h1>Bitcoin Price Prediction</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="days_ahead">Enter the number of days ahead to predict:</label>
+                <input type="number" id="days_ahead" name="days_ahead" min="1" max="365" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-success">Predict</button>
+                <button type="button" class="btn-danger" id="clear-predictions">Clear Predictions</button>
+            </div>
+        </form>
+        <div id="prediction-table">
+            {% if prediction is not none %}
+                <h2>Predicted Bitcoin Prices:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                           <th>Date</th>
+                            <th>Predicted Price</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for date, price in prediction.items() %}
+                        <tr>
+                            <td>{{ date.strftime('%Y-%m-%d') }}</td>
+                            <td>{{ "$%.2f"|format(price) }}</td>
+                            <td>{{ "$%.2f"|format(price * 0.95) }}</td>
+                            <td>{{ "$%.2f"|format(price * 1.05) }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
