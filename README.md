@@ -55,10 +55,12 @@ pip install -r requirements.txt
 # Usage
 
 Instructions on how to use your project. This could include how to run the application, how to interact with it, and any other relevant information.
+don't forget to replace the Api with your "CryptoCompare" Api
 
 ```bash
 python app.py
 ```
+The app will be running on: http://127.0.0.1:5000/
 
 # Deployment
 
