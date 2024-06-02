@@ -1,11 +1,9 @@
-Certainly! Below is a template for a clear and detailed README file for your Flask project. You can customize it to fit your project's specifics.
 
-```markdown
-# Project Name
+# Bitcoin Price Predctions Web App
 
 A brief description of your project goes here. This should be a concise summary of what the project does and its purpose.
 
-## Table of Contents
+# Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,7 +12,7 @@ A brief description of your project goes here. This should be a concise summary 
 - [License](#license)
 - [Contact](#contact)
 
-## Installation
+# Installation
 
 Step-by-step instructions on how to get your project up and running.
 
