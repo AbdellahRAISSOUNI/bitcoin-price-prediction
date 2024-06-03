@@ -37,7 +37,7 @@ Step-by-step instructions on how to get your project up and running.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/AbdellahRAISSOUNI/bitcoin-price-prediction
 ```
 
 2. Navigate to the project directory:
